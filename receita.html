@@ -1,0 +1,182 @@
+DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Função para mostrar apenas a receita selecionada
+    function mostrarReceita(id) {
+      // Oculta todas as receitas
+      var receitas = document.querySelectorAll('.receita');
+      receitas.forEach(function(receita) {
+        receita.style.display = 'none';
+      });
+      // Exibe a receita clicada
+      var receitaSelecionada = document.getElementById(id);
+      receitaSelecionada.style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Site de Receitas</h1>
+    <a href="index.html">Voltar para a Página Inicial</a>
+  </header>
+
+  <main>
+    <section>
+      <h2>Receitas</h2>
+      <ul>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('brigadeiro')">Brigadeiro</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('bolo-cenoura')">Bolo de Cenoura</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('coxinha')">Coxinha</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('esfiha')">Esfiha</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('omelete')">Omelete</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('sanduiche')">Sanduíche</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('bolo-chocolate')">Bolo de Chocolate</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('pizza')">Pizza Caseira</a></li>
+        <li><a href="javascript:void(0)" onclick="mostrarReceita('salada-frutas')">Salada de Frutas</a></li>
+      </ul>
+    </section>
+
+    <!-- Receitas -->
+    <section id="brigadeiro" class="receita" style="display:none;">
+      <h3>Brigadeiro</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>1 lata de leite condensado</li>
+        <li>2 colheres de sopa de achocolatado</li>
+        <li>1 colher de sopa de manteiga</li>
+        <li>Chocolate granulado</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Em uma panela, misture o leite condensado, o achocolatado e a manteiga. Cozinhe em fogo médio, mexendo sempre até desgrudar do fundo da panela. Deixe esfriar, modele os brigadeiros e passe no chocolate granulado.</p>
+    </section>
+
+    <section id="bolo-cenoura" class="receita" style="display:none;">
+      <h3>Bolo de Cenoura</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>2 cenouras médias raladas</li>
+        <li>3 ovos</li>
+        <li>1 xícara de óleo</li>
+        <li>2 xícaras de açúcar</li>
+        <li>2 xícaras de farinha de trigo</li>
+        <li>1 colher de fermento em pó</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Bata todos os ingredientes no liquidificador até obter uma massa homogênea. Transfira para uma forma untada e asse em forno médio por cerca de 30 minutos.</p>
+    </section>
+
+    <section id="coxinha" class="receita" style="display:none;">
+      <h3>Coxinha</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>500g de frango desfiado</li>
+        <li>1 xícara de caldo de frango</li>
+        <li>2 xícaras de farinha de trigo</li>
+        <li>Óleo para fritar</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Prepare o recheio com o frango desfiado e o caldo de frango. Faça a massa com a farinha de trigo e o caldo de frango. Modele as coxinhas, recheie com o frango, passe na farinha de rosca e frite até dourar.</p>
+    </section>
+
+    <section id="esfiha" class="receita" style="display:none;">
+      <h3>Esfiha</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>500g de carne moída</li>
+        <li>1 cebola picada</li>
+        <li>1 colher de chá de alho picado</li>
+        <li>1 pacote de massa de esfiha pronta</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Refogue a carne moída com a cebola e o alho. Modele a massa de esfiha e coloque o recheio. Asse em forno médio por 20 minutos ou até dourar.</p>
+    </section>
+
+    <section id="omelete" class="receita" style="display:none;">
+      <h3>Omelete</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>2 ovos</li>
+        <li>1 colher de sopa de óleo</li>
+        <li>1/2 tomate picado</li>
+        <li>1/2 cebola picada</li>
+        <li>Sal e pimenta a gosto</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Em uma frigideira, refogue a cebola e o tomate. Bata os ovos com sal e pimenta, despeje sobre a cebola e tomate e cozinhe até dourar.</p>
+    </section>
+
+    <section id="sanduiche" class="receita" style="display:none;">
+      <h3>Sanduíche</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>Pão de forma</li>
+        <li>Presunto</li>
+        <li>Queijo</li>
+        <li>Alface</li>
+        <li>Tomate</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Monte o sanduíche com as fatias de pão, presunto, queijo, alface e tomate. Sirva frio ou grelhe em uma chapa.</p>
+    </section>
+
+    <section id="bolo-chocolate" class="receita" style="display:none;">
+      <h3>Bolo de Chocolate</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>2 xícaras de açúcar</li>
+        <li>1 xícara de leite</li>
+        <li>1 xícara de óleo</li>
+        <li>2 xícaras de farinha de trigo</li>
+        <li>3 colheres de sopa de achocolatado</li>
+        <li>1 colher de fermento em pó</li>
+        <li>2 ovos</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Misture todos os ingredientes até obter uma massa homogênea. Coloque em uma forma untada e asse em forno médio por cerca de 30 minutos.</p>
+    </section>
+
+    <!-- Continuando a receita da Pizza -->
+    <section id="pizza" class="receita" style="display:none;">
+      <h3>Pizza Caseira</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>1 xícara de água morna</li>
+        <li>1 colher de sopa de açúcar</li>
+        <li>1 colher de sopa de fermento biológico</li>
+        <li>2 xícaras de farinha de trigo</li>
+        <li>1/2 xícara de molho de tomate</li>
+        <li>Queijo e presunto</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Dissolva o açúcar e o fermento na água morna. Adicione a farinha e sove até obter uma massa homogênea. Deixe descansar por 30 minutos. Modele a pizza e coloque molho de tomate, queijo e presunto por cima. Asse em forno médio até dourar.</p>
+    </section>
+
+    <section id="salada-frutas" class="receita" style="display:none;">
+      <h3>Salada de Frutas</h3>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>1 banana</li>
+        <li>1 maçã</li>
+        <li>1 laranja</li>
+        <li>1 fatia de melancia</li>
+        <li>1/2 manga</li>
+        <li>1 colher de mel</li>
+      </ul>
+      <h4>Modo de Preparo:</h4>
+      <p>Corte as frutas em pedaços pequenos e misture. Regue com mel a gosto e sirva gelada.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2024 Site de Receitas - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
